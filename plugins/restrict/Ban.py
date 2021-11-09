@@ -1,7 +1,7 @@
 from pyrogram import Client, filters
-from pyrobot.helper_functions.admin_check import admin_check
-from pyrobot.helper_functions.extract_user import extract_user
-from pyrobot.helper_functions.string_handling import extract_time
+from plugins.admin_check import admin_check
+from plugins.extract_user import extract_user
+from plugins.string_handling import extract_time
 
 COMMAND_HAND_LER = "/"
 
