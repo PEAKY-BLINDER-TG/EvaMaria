@@ -5,11 +5,11 @@ from pyrogram import (
 from pyrogram.types import (
     ChatPermissions
 )
-from pyrobot import COMMAND_HAND_LER
-from pyrobot.helper_functions.admin_check import admin_check
-from pyrobot.helper_functions.extract_user import extract_user
-from pyrobot.helper_functions.string_handling import extract_time
+from plugins.admin_check import admin_check
+from plugins.extract_user import extract_user
+from plugins.string_handling import extract_time
 
+COMMAND_HAND_LER = "/"
 
 @Client.on_message(filters.command("mute", COMMAND_HAND_LER))
 async def mute_user(_, message):
