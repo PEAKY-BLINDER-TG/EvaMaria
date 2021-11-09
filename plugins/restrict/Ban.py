@@ -3,7 +3,6 @@ from plugins.admin_check import admin_check
 from plugins.extract_user import extract_user
 from plugins.string_handling import extract_time
 
-COMMAND_HAND_LER = "/"
 
 @Client.on_message(filters.command("ban", COMMAND_HAND_LER))
 async def ban_user(_, message):
